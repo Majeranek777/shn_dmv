@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body{
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.monitor{
+    position: relative;
+    margin-top: 3dvh;
+    height: 90dvh;
+    width: 90dvw;
+
+    border: 0.5dvh #1b1b1b solid;
+    border-bottom: 4dvh #1b1b1b solid;
+
+    background-color: #31313198;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 50px 0px rgb(36, 36, 36);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main{
+    font-family: 'Rubik', sans-serif;
+    font-size: 6dvh;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0px 0px 12px rgba(7, 7, 31, 1);
+    box-shadow: 0px 0px 12px 0px rgb(7,7,12);
+    background-color: #1d1d1d98;
+    border-radius: 0.7dvh;
+    padding: 2dvh;
+    text-align: center;
+}
+
+.buttons{
+    margin: 2dvh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.button{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 0.7dvh;
+    margin: 1dvh;
+    width: 50dvw;
+    font-size: 3.5dvh;
+    white-space: normal;
+    color: white;
+    background-color: rgb(7,7,12);
+    box-shadow: 0px 0px 8px 0px rgb(7,7,12);
+    text-shadow: 0px 0px 12px rgba(17, 17, 22, 1);
+}
+
+.button:hover{
+    transition: 0.3s;
+    background-color: white;
+    box-shadow: 0px 0px 8px 0px white;
+    color: rgb(7,7,12);
+}
+
+.price{
+    position: absolute;
+    right: 0;
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+    margin-right: 2.5dvh;
+    font-size: 3.5dvh;
+    color: #00ffb8;
+}
+
+.exit{
+    position: absolute;
+    width: 5dvh;
+    height: 5dvh;
+    bottom: 0;
+    margin: 1.5dvh;
+
+    border: none;
+    border-radius: 50%;
+    
+    background-color: #dc143ca2;
+    box-shadow: 0px 0px 10px 0px #dc143c6b;
+    text-shadow: 0px 0px 12px rgba(7, 7, 31, 1);
+    font-size: 3.5dvh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exit:hover{
+    transition: 0.3s;
+    animation: exit ease-in 0.3s forwards;
+    background-color: #b11232a2;
+    box-shadow: 0px 0px 10px 0px #b11232a2;
+}
+
+.fa-solid{
+    display: block;
+    position: relative;
+    margin: 2dvh;
+}
+
+@keyframes exit {
+    to{
+        font-size: 4dvh;
+    } 
+}
+
+/* *{
+    border: red 1px dotted;
+} */
