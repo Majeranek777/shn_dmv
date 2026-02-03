@@ -1,4 +1,4 @@
-Hello, this is a showcase project,
+Hello, this is a showcase project.
 This is frontend for a DVM app, it is supposed to simulate a computer screen, intended use was for a FiveM Resource.
 Here are some pictures:
 
